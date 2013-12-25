@@ -9,7 +9,6 @@ in port button = XS1_PORT_32A;
 int main(void)
 {
     timer t;
-
     unsigned state = 1, time;
 
     t :> time;
