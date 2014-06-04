@@ -1,0 +1,33 @@
+Actual Device: https://www.xmos.com/download/public/XS1-U16A-128-FB217-Datasheet(X1110G).pdf
+
+Freeing Tile0 / USB Dynamic Loading : 
+http://www.xcore.com/forum/viewtopic.php?f=44&t=2477
+http://macgyver.sh.cvut.cz/wiki/vybaveni/demo_boardy/xmos_startkit
+
+Overclocking Startkit:
+
+Add ReferenceFrequency = 250MHz to XN file
+
+
+Breakouts from Tile0 (Debug Tile):
+
+Board ID         Ball            Pin           Port
+========        ======          =====         =======
+
+J5/DIG0           U19           X0D10           P1C
+J5/DIG1           V19           X0D11           P1D
+
+J6/CLK_OUT        R19           X0D00           P1A   (with 33ohm resistor)
+J6/RST_OUT        T19           X0D01           P1B
+
+TP1-4/MSEL        J18.H18       MODE2.MODE3           BOOT MODE SELECT
+TP1-5/TDI         W19.H19       X0D12.TDI       P1E
+TP1-6/TMS         W18.M19       X0D13.TMS       P1F
+TP1-7/TCK         W13.L19       X0D22.TCK       P1G
+TP1-8/DBG_N       M18           DBG_N                 MULTICHIP-DEBUG
+TP1-9/TDO         P19.K19       X0D35.TDO       P1L
+TP1-10/RST_N      J2            RST_N                 GLOBAL RESET
+
+TRST ?                                          P1I
+
+
